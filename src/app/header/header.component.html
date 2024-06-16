@@ -1,10 +1,19 @@
-<div>
-    <h1>Art Official Intelligence</h1>
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" routerLink="about">About Us</a>
-        </nav>
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" routerLink="/contact">Contact Us</a>
-        </nav>
+<nav class="navbar navbar-light bg-light" aria-label="primary-header">
+    <img src="/assets/art-official-intelligence-logo-1/Art Official Intelligence_transparent.png" alt="Logo"
+        class="logo" routerLink="about">
 
-</div>
+    <ul class="nav-list">
+        <!-- <li><a href="#">Home</a></li> -->
+        <li>
+            <a class="navbar-brand"
+                 routerLink="about"
+                 aria-current="about-page">About Us</a>
+        </li>
+        <!-- <li><a href="#">Services</a></li> -->
+        <li>
+            <a class="navbar-brand" 
+                routerLink="/contact"
+                aria-current="contact">Contact Us</a>
+        </li>
+    </ul>
+</nav>

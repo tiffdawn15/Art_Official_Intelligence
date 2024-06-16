@@ -10,8 +10,7 @@ import { BuilderBlock } from '@builder.io/angular'; // <-- import BuilderBlock
 export class AboutUsComponent {
 
   @Input()
-  text = ''; // <-- name Angular and Builder inputs the same 
-  name = ''
+  name = '';
 }
 
 BuilderBlock({
