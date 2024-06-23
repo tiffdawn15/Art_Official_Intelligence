@@ -3,8 +3,7 @@ import { BuilderBlock } from '@builder.io/angular'; // <-- import BuilderBlock
 
 @Component({
   selector: 'app-about-us',
-  template: 'Hello: {{name}}!',
-
+  templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent {
