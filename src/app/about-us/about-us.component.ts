@@ -7,9 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class AboutUsComponent {
 
-  @Input()
-  text = ''; // <-- name Angular and Builder inputs the same 
-  name = ''
+
 }
 
 
