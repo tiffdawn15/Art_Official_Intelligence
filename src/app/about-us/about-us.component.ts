@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { BuilderBlock } from '@builder.io/angular'; // <-- import BuilderBlock
 
 @Component({
   selector: 'app-about-us',
@@ -13,13 +12,4 @@ export class AboutUsComponent {
   name = ''
 }
 
-BuilderBlock({
-  tag: 'app-about-us', 
-  name: 'Custom thing',
-  inputs: [
-    {
-      name: 'text', // <-- this name matches the Angular @Input() above
-      type: 'string',
-    },
-  ],
-})(AboutUsComponent);
+
