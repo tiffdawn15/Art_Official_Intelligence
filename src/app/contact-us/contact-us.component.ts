@@ -15,7 +15,7 @@ interface ToFrom {
 
 export interface EmailRequest {
   sender: ToFrom;
-  to: ToFrom;
+  to: [ToFrom];
   htmlContent: string;
   subject: string;
   replyTo: ToFrom;
@@ -57,7 +57,6 @@ export class ContactUsComponent {
   });
 
   constructor(
-    private builder: FormBuilder,
     private contactService: ContactService
   ) {}
 
@@ -71,13 +70,16 @@ export class ContactUsComponent {
       email: this.contactForm.get("email")?.value,
     };
 
-    const to = {};
+    const to = [{
+      name: "Tiff", 
+      email: "tiffanymesser15@gmail.com"
+    }];
     // TODO: Implement Good object practices here
     const message = {
       sender: from,
       to: to,
-      htmlContent: "",
-      subject: "",
+      htmlContent: this.contactForm.get('message')?.value,
+      subject: "Email from our Website",
       replyTo: from,
     };
 
