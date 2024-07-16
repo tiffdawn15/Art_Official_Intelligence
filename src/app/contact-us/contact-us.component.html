@@ -1,21 +1,24 @@
 <div class="d-flex">
-    <img src="./assets/kelly-sikkema-K5dAn1gOFEc-unsplash.jpg" class="w-50 h-25">
+    <img src="./assets/Screenshot 2024-07-16 at 9.56.36 AM.png" class="w-50 h-25 p-3">
+    <div class="form-div">
 
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter your name">
-            <!-- <div
+        <h2>Contact Us</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter your name">
+                <!-- <div
                 *ngIf="contactForm.get('name').invalid && (contactForm.get('name').dirty || contactForm.get('name').touched)">
                 <div *ngIf="contactForm.get('name').errors?.required">
                     Name is required.
                 </div>
             </div> -->
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter your email">
-            <!-- <div
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" formControlName="email"
+                    placeholder="Enter your email">
+                <!-- <div
                 *ngIf="contactForm.get('email').invalid && (contactForm.get('email').dirty || contactForm.get('email').touched)">
                 <div *ngIf="contactForm.get('email').errors?.required">
                     Email is required.
@@ -24,15 +27,13 @@
                     Please enter a valid email address.
                 </div> 
             </div> -->
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" formControlName="message" rows="3"
-                placeholder="Enter your message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Submit</button>
-    </form>
-
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" formControlName="message" rows="3"
+                    placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Submit</button>
+        </form>
+    </div>
 </div>
-
-
